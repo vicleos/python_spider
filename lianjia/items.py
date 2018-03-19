@@ -26,3 +26,15 @@ class LianjiaItem(scrapy.Item):
     price_show_config = scrapy.Field()
     show_price_unit = scrapy.Field()
     show_price_desc = scrapy.Field()
+
+
+class LJDistrictItem(scrapy.Item):
+    # define the fields for your item here like:
+    district_id = scrapy.Field()
+    lng = scrapy.Field()
+    lat = scrapy.Field()
+    district_name = scrapy.Field()
+    quanpin = scrapy.Field()
+    position_border = scrapy.Field()
+    count = scrapy.Field()
+
