@@ -6,7 +6,6 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import pymysql
-import sys
 import traceback
 
 
@@ -15,22 +14,40 @@ class LianjiaPipeline(object):
         db = pymysql.connect(host="192.168.1.15", user="root", password="123456", db="kg_house", port=3306, charset="utf8")
         # 使用cursor方法获取操作游标
         db_cur = db.cursor()
-        sql = "insert into spider_district(\
-        district_id, \
-        district_name, \
-        quanpin, \
+
+        # sql = "insert into spider_district(\
+        # district_id, \
+        # district_name, \
+        # quanpin, \
+        # lat, \
+        # lng, \
+        # position_border, \
+        # count) \
+        #  values(%s, %s, %s, %s, %s, %s, %s)"
+
+        # values = (item['district_id'], item['district_name'].encode('utf8').decode('unicode_escape'),  item['quanpin'], item['lat'], item['lng'], item['position_border'].encode('utf8'), item['count'])
+
+        sql = "insert into spider_biz_circle(\
+        area_name, \
+        area_id, \
         lat, \
         lng, \
+        house_count, \
         position_border, \
-        count) \
-         values(%s, %s, %s, %s, %s, %s, %s)"
+        min_price_total, \
+        avg_unit_price) \
+         values(%s, %s, %s, %s, %s, %s, %s, %s)"
+
+        values = (item['area_name'].encode('utf8').decode('unicode_escape'), item['area_id'],  item['lat'], item['lng'], item['house_count'], item['position_border'], item['min_price_total'], item['avg_unit_price'])
+
         try:
             print('item =======', item)
-            db_cur.execute(sql, (item['district_id'], item['district_name'].encode('utf8').decode('unicode_escape'),  item['quanpin'], item['lat'], item['lng'], item['position_border'].encode('utf8'), item['count']))
+            db_cur.execute(sql, values)
             db.commit()
-        except:
+        except Exception as e:
             traceback.print_exc()
             db.rollback()
+            print(e)
             raise
         finally:
             db.close()

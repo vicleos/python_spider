@@ -28,6 +28,7 @@ class LianjiaItem(scrapy.Item):
     show_price_desc = scrapy.Field()
 
 
+# 行政区
 class LJDistrictItem(scrapy.Item):
     # define the fields for your item here like:
     district_id = scrapy.Field()
@@ -38,3 +39,14 @@ class LJDistrictItem(scrapy.Item):
     position_border = scrapy.Field()
     count = scrapy.Field()
 
+
+# 区域商圈
+class LJBizCircleItem(scrapy.Item):
+    house_count = scrapy.Field()
+    min_price_total = scrapy.Field()
+    area_id = scrapy.Field()
+    area_name = scrapy.Field()
+    position_border = scrapy.Field()
+    lng = scrapy.Field()
+    lat = scrapy.Field()
+    avg_unit_price = scrapy.Field()
