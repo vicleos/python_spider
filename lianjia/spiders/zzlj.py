@@ -3,19 +3,34 @@ import scrapy
 # import re
 # from lianjia.items import LianjiaItem
 # from lianjia.items import LJDistrictItem
-from lianjia.items import LJBizCircleItem
+# from lianjia.items import LJBizCircleItem
+from lianjia.items import FangDistAreaItem
 import json
 
 
 class ZzljSpider(scrapy.Spider):
     name = 'zzlj'
-    allowed_domains = ['zz.fang.lianjia.com']
-    start_urls = ['http://zz.fang.lianjia.com/loupan/', 'https://zz.fang.lianjia.com/xinfang/mapsearchloupan', 'https://zz.fang.lianjia.com/xinfang/mapsearchdistrict?&&position_border=1&callback=jQuery11110023956285515926545_1521108328084&_=1521108328085', 'https://ajax.lianjia.com/ajax/mapsearch/area/bizcircle?&&city_id=410100&callback=jQuery111107924035109078831_1521623214218&_=1521623214224']
+    # allowed_domains = ['zz.fang.lianjia.com']
+    allowed_domains = ['esf.fz.fang.com']
+    start_urls = ['http://esf.fz.fang.com/map/?a=getDistArea&city=xm', 'http://zz.fang.lianjia.com/loupan/', 'https://zz.fang.lianjia.com/xinfang/mapsearchloupan', 'https://zz.fang.lianjia.com/xinfang/mapsearchdistrict?&&position_border=1&callback=jQuery11110023956285515926545_1521108328084&_=1521108328085', 'https://ajax.lianjia.com/ajax/mapsearch/area/bizcircle?&&city_id=410100&callback=jQuery111107924035109078831_1521623214218&_=1521623214224']
     pageNum = 1
 
     def parse(self, response):
         # json 解析, 取出坐标
-        if response.url.count('mapsearchloupan') > 0:
+        if (response.url.count('getDistArea') > 0):
+            distListJson = json.loads(response.body)
+            for lineRow in distListJson:
+                item = FangDistAreaItem()
+                item['source_id'] = lineRow['id']
+                item['name'] = lineRow['name']
+                item['lng'] = lineRow['x']
+                item['lat'] = lineRow['y']
+                item['quanpin'] = lineRow['quanpin']
+                item['position_border'] = lineRow['baidu_coord']
+                item['area_list'] = lineRow['area']
+                yield item
+                    
+        elif(response.url.count('mapsearchloupan') > 0):
             # print('================ json parse start ===============')
             # mapListJson = json.loads(response.body)
             # for lineRow in mapListJson['data']:
@@ -58,25 +73,26 @@ class ZzljSpider(scrapy.Spider):
             #     yield item
             pass
         elif(response.url.count('bizcircle') > 0):
-            print('================ bizcircle json parse start ===============')
-            bodyStr = str(response.body)
-            bodyStr = bodyStr.replace('jQuery111107924035109078831_1521623214218(', '')[2:-2]
-            mapListJson = json.loads(bodyStr, encoding='utf-8')
-            # print(mapListJson)
-            for lineRow in mapListJson['data']:
-                print('======================', lineRow['latitude'])
-                item = LJBizCircleItem()
-                item['area_name'] = lineRow['name']
-                item['area_id'] = lineRow['id']
-                item['lat'] = lineRow['latitude']
-                item['lng'] = lineRow['longitude']
-                item['house_count'] = lineRow['house_count']
-                item['position_border'] = lineRow['position_border']
-                item['min_price_total'] = lineRow['min_price_total']
-                item['avg_unit_price'] = round(lineRow['bs_avg_unit_price'], 2) * 100
-                yield item
+            # print('================ bizcircle json parse start ===============')
+            # bodyStr = str(response.body)
+            # bodyStr = bodyStr.replace('jQuery111107924035109078831_1521623214218(', '')[2:-2]
+            # mapListJson = json.loads(bodyStr, encoding='utf-8')
+            # # print(mapListJson)
+            # for lineRow in mapListJson['data']:
+            #     print('======================', lineRow['latitude'])
+            #     item = LJBizCircleItem()
+            #     item['area_name'] = lineRow['name']
+            #     item['area_id'] = lineRow['id']
+            #     item['lat'] = lineRow['latitude']
+            #     item['lng'] = lineRow['longitude']
+            #     item['house_count'] = lineRow['house_count']
+            #     item['position_border'] = lineRow['position_border']
+            #     item['min_price_total'] = lineRow['min_price_total']
+            #     item['avg_unit_price'] = round(lineRow['bs_avg_unit_price'], 2) * 100
+            #     yield item
+            pass
         else:
-            print('xxxxxxxxxxxxxx ==========', response.url)
+            # print('xxxxxxxxxxxxxx ==========', response.url)
             # 网页列表解析
             # lianjias = response.css('ul.resblock-list-wrapper li')
             # self.pageNum += 1

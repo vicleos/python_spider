@@ -50,3 +50,16 @@ class LJBizCircleItem(scrapy.Item):
     lng = scrapy.Field()
     lat = scrapy.Field()
     avg_unit_price = scrapy.Field()
+
+
+# 房天下城市区域数据
+class FangDistAreaItem(scrapy.Item):
+    source_id = scrapy.Field()
+    name = scrapy.Field()
+    # x
+    lng = scrapy.Field()
+    # y
+    lat = scrapy.Field()
+    quanpin = scrapy.Field()
+    position_border = scrapy.Field()
+    area_list = scrapy.Field()
