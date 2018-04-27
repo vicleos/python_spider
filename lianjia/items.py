@@ -63,3 +63,22 @@ class FangDistAreaItem(scrapy.Item):
     quanpin = scrapy.Field()
     position_border = scrapy.Field()
     area_list = scrapy.Field()
+
+
+# 房天下学校列表
+class FangSchoolListItem(scrapy.Item):
+    short_name = scrapy.Field()
+    name = scrapy.Field()
+    img_url = scrapy.Field()
+    address = scrapy.Field()
+    community_count = scrapy.Field()
+    school_note_tag = scrapy.Field()
+    # 先将特色标签放入到 feature中
+    tags = scrapy.Field()
+    tel_number = scrapy.Field()
+    guide = scrapy.Field()
+    students_scope = scrapy.Field()
+    conditions = scrapy.Field()
+    intro = scrapy.Field()
+    feature = scrapy.Field()
+    detail_link = scrapy.Field()

@@ -1,0 +1,262 @@
+2018-04-27 12:32:05 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: lianjia)
+2018-04-27 12:32:05 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Windows-7-6.1.7601-SP1
+2018-04-27 12:32:05 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'lianjia', 'CONCURRENT_REQUESTS': 1, 'LOG_FILE': 'mySpider.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'lianjia.spiders', 'SPIDER_MODULES': ['lianjia.spiders'], 'USER_AGENT': 'Mozilla/6.0 (Windows NT 8.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3282.186 Safari/537.36'}
+2018-04-27 12:32:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-04-27 12:32:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-27 12:32:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-27 12:32:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['lianjia.pipelines.LianjiaPipeline']
+2018-04-27 12:32:05 [scrapy.core.engine] INFO: Spider opened
+2018-04-27 12:32:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-27 12:32:05 [py.warnings] WARNING: D:\python\spider\python_spider\lianjia\spiders\zzlj.py:30: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg("listItem['tel_number'] -> ")
+
+2018-04-27 12:32:05 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:05 [py.warnings] WARNING: D:\python\spider\python_spider\lianjia\spiders\zzlj.py:31: ScrapyDeprecationWarning: log.msg has been deprecated, create a python logger and log through it instead
+  log.msg(listItem['tel_number'])
+
+2018-04-27 12:32:05 [scrapy.log] INFO: 0591-87521773
+2018-04-27 12:32:06 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:06 [scrapy.log] INFO: 0591-83671124
+2018-04-27 12:32:06 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:06 [scrapy.log] INFO: 0591-87054800
+2018-04-27 12:32:07 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:07 [scrapy.log] INFO: 0591-83470050
+2018-04-27 12:32:07 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:07 [scrapy.log] INFO: 0591-83255782
+2018-04-27 12:32:08 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:08 [scrapy.log] INFO: 0591-38107107
+2018-04-27 12:32:08 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:08 [scrapy.log] INFO: 0591-83274642
+2018-04-27 12:32:08 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:08 [scrapy.log] INFO: 0591-87716414
+2018-04-27 12:32:10 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:10 [scrapy.log] INFO: 0591-83623612
+2018-04-27 12:32:10 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:10 [scrapy.log] INFO: 0591-87913091
+2018-04-27 12:32:11 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:11 [scrapy.log] INFO: 0591-22886994
+2018-04-27 12:32:12 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:12 [scrapy.log] INFO: 
+2018-04-27 12:32:12 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:12 [scrapy.log] INFO: 0591-87901016
+2018-04-27 12:32:12 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:12 [scrapy.log] INFO: 0591-88057206
+2018-04-27 12:32:12 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:12 [scrapy.log] INFO: 0591-83658196
+2018-04-27 12:32:12 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:12 [scrapy.log] INFO: 0591-83273171
+2018-04-27 12:32:14 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:14 [scrapy.log] INFO: 0591-83502811
+2018-04-27 12:32:14 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:14 [scrapy.log] INFO: 0591-83701919
+2018-04-27 12:32:14 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:14 [scrapy.log] INFO: 0591-83693100
+2018-04-27 12:32:14 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:14 [scrapy.log] INFO: 0591-87912795
+2018-04-27 12:32:16 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:16 [scrapy.log] INFO: 0591-83622554
+2018-04-27 12:32:16 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:16 [scrapy.log] INFO: 0591-87955700
+2018-04-27 12:32:16 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:16 [scrapy.log] INFO: 0591-83663464
+2018-04-27 12:32:16 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:16 [scrapy.log] INFO: 
+2018-04-27 12:32:16 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:16 [scrapy.log] INFO: 0591-3694311
+2018-04-27 12:32:19 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:19 [scrapy.log] INFO: 0591-83972121
+2018-04-27 12:32:19 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:19 [scrapy.log] INFO: 0591-88026689
+2018-04-27 12:32:19 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:19 [scrapy.log] INFO: 0591-83050016
+2018-04-27 12:32:19 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:19 [scrapy.log] INFO: 0591-83581795
+2018-04-27 12:32:19 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:19 [scrapy.log] INFO: 13675083290
+2018-04-27 12:32:24 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:24 [scrapy.log] INFO: 0591-83597695
+2018-04-27 12:32:24 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:24 [scrapy.log] INFO: 0591-83477759
+2018-04-27 12:32:24 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:24 [scrapy.log] INFO: 0591-83665298
+2018-04-27 12:32:24 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:24 [scrapy.log] INFO: 0591-62025202
+2018-04-27 12:32:26 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:26 [scrapy.log] INFO: 0591-83502811
+2018-04-27 12:32:26 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:26 [scrapy.log] INFO: 0591-83745572
+2018-04-27 12:32:26 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:26 [scrapy.log] INFO: 0591-83439903
+2018-04-27 12:32:26 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:26 [scrapy.log] INFO: 0591-3509624
+2018-04-27 12:32:27 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:27 [scrapy.log] INFO: 0591-7579479
+2018-04-27 12:32:27 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:27 [scrapy.log] INFO: 0591-3440291
+2018-04-27 12:32:27 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:27 [scrapy.log] INFO: 0591-83442634
+2018-04-27 12:32:27 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:27 [scrapy.log] INFO: 0591-83495578
+2018-04-27 12:32:27 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:27 [scrapy.log] INFO: 0591-83269812
+2018-04-27 12:32:31 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:31 [scrapy.log] INFO: 0591-83266801
+2018-04-27 12:32:31 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:31 [scrapy.log] INFO: 0591-87486019
+2018-04-27 12:32:31 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:31 [scrapy.log] INFO: 0591-28367501
+2018-04-27 12:32:31 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:31 [scrapy.log] INFO: 0591-83265943
+2018-04-27 12:32:37 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:37 [scrapy.log] INFO: 0591-83776661
+2018-04-27 12:32:37 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:37 [scrapy.log] INFO: 0591-83732610
+2018-04-27 12:32:37 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:37 [scrapy.log] INFO: 0591-83269122
+2018-04-27 12:32:37 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:37 [scrapy.log] INFO: 0591-83252844
+2018-04-27 12:32:39 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:39 [scrapy.log] INFO: 0591-83277389
+2018-04-27 12:32:39 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:39 [scrapy.log] INFO: 0591-83338160
+2018-04-27 12:32:39 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:39 [scrapy.log] INFO: 0591-83321128
+2018-04-27 12:32:40 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:40 [scrapy.log] INFO: 0591-87872110
+2018-04-27 12:32:40 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:40 [scrapy.log] INFO: 0591-87274875
+2018-04-27 12:32:40 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:40 [scrapy.log] INFO: 0591-87710074
+2018-04-27 12:32:40 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:40 [scrapy.log] INFO: 0591-83310434
+2018-04-27 12:32:41 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:41 [scrapy.log] INFO: 0591-87609427
+2018-04-27 12:32:42 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:42 [scrapy.log] INFO: 0591-83352843
+2018-04-27 12:32:43 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:43 [scrapy.log] INFO: 0591-83353450
+2018-04-27 12:32:43 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:43 [scrapy.log] INFO: 0591-87554992
+2018-04-27 12:32:43 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:43 [scrapy.log] INFO: 0591-3660454
+2018-04-27 12:32:43 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:43 [scrapy.log] INFO: 0591-87336741
+2018-04-27 12:32:45 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:45 [scrapy.log] INFO: 0591-87337054
+2018-04-27 12:32:45 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:45 [scrapy.log] INFO: 0591-83665520
+2018-04-27 12:32:45 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:45 [scrapy.log] INFO: 13959111281
+2018-04-27 12:32:45 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:45 [scrapy.log] INFO: 0591-83419992
+2018-04-27 12:32:48 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:48 [scrapy.log] INFO: 0591-83474094
+2018-04-27 12:32:48 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:48 [scrapy.log] INFO: 0591-83441662
+2018-04-27 12:32:48 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:48 [scrapy.log] INFO: 0591-83827595
+2018-04-27 12:32:48 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:48 [scrapy.log] INFO: 0591-83216581
+2018-04-27 12:32:49 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:49 [scrapy.log] INFO: 0591-83355887
+2018-04-27 12:32:49 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:49 [scrapy.log] INFO: 0591-83312509
+2018-04-27 12:32:49 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:49 [scrapy.log] INFO: 0591-83258434
+2018-04-27 12:32:49 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:49 [scrapy.log] INFO: 0591-83710390
+2018-04-27 12:32:50 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:50 [scrapy.log] INFO: 0591-83899371
+2018-04-27 12:32:50 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:50 [scrapy.log] INFO: 0591-83714134
+2018-04-27 12:32:50 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:50 [scrapy.log] INFO: 0591-7860099
+2018-04-27 12:32:50 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:50 [scrapy.log] INFO: 0591-88011338
+2018-04-27 12:32:52 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:52 [scrapy.log] INFO: 0591-87725611
+2018-04-27 12:32:52 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:52 [scrapy.log] INFO: 0591-87842872
+2018-04-27 12:32:52 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:52 [scrapy.log] INFO: 0591-87824213
+2018-04-27 12:32:53 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:53 [scrapy.log] INFO: 0591-87503844
+2018-04-27 12:32:55 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:55 [scrapy.log] INFO: 0591-83773145
+2018-04-27 12:32:55 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:55 [scrapy.log] INFO: 0591-87533243
+2018-04-27 12:32:55 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:55 [scrapy.log] INFO: 059183725790
+2018-04-27 12:32:58 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:58 [scrapy.log] INFO: 0591-87563914
+2018-04-27 12:32:58 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:58 [scrapy.log] INFO: 0591-87557676
+2018-04-27 12:32:58 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:32:58 [scrapy.log] INFO: 0591-87550938
+2018-04-27 12:33:00 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:00 [scrapy.log] INFO: 0591-87660076
+2018-04-27 12:33:00 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:00 [scrapy.log] INFO: 0591-87531284
+2018-04-27 12:33:00 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:00 [scrapy.log] INFO: 0591-87560594
+2018-04-27 12:33:00 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:00 [scrapy.log] INFO: 0591-87717548
+2018-04-27 12:33:01 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:01 [scrapy.log] INFO: 0591-87831675
+2018-04-27 12:33:02 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:02 [scrapy.log] INFO: 0591-87848587
+2018-04-27 12:33:03 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:03 [scrapy.log] INFO: 0591-87625868
+2018-04-27 12:33:03 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:03 [scrapy.log] INFO: 0591-83056122
+2018-04-27 12:33:04 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:04 [scrapy.log] INFO: 0591-83320492
+2018-04-27 12:33:04 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:04 [scrapy.log] INFO: 0591-83571691
+2018-04-27 12:33:04 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:04 [scrapy.log] INFO: 0591-83051070
+2018-04-27 12:33:04 [scrapy.log] INFO: listItem['tel_number'] -> 
+2018-04-27 12:33:04 [scrapy.log] INFO: 0591-87822612
+2018-04-27 12:33:05 [scrapy.extensions.logstats] INFO: Crawled 209 pages (at 209 pages/min), scraped 100 items (at 100 items/min)
+2018-04-27 12:33:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-04-27 12:33:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 88332,
+ 'downloader/request_count': 215,
+ 'downloader/request_method_count/GET': 215,
+ 'downloader/response_bytes': 3430791,
+ 'downloader/response_count': 215,
+ 'downloader/response_status_count/200': 210,
+ 'downloader/response_status_count/301': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 4, 27, 4, 33, 5, 863793),
+ 'item_scraped_count': 102,
+ 'log_count/INFO': 212,
+ 'log_count/WARNING': 2,
+ 'request_depth_max': 7,
+ 'response_received_count': 210,
+ 'scheduler/dequeued': 215,
+ 'scheduler/dequeued/memory': 215,
+ 'scheduler/enqueued': 215,
+ 'scheduler/enqueued/memory': 215,
+ 'start_time': datetime.datetime(2018, 4, 27, 4, 32, 5, 527131)}
+2018-04-27 12:33:05 [scrapy.core.engine] INFO: Spider closed (finished)
